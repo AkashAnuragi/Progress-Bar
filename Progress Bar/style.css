@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+}
+.progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ddd;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+}
+.progress-done {
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: #fff;
+    height: 100%;
+    background: linear-gradient(to left,rgb(2, 40, 253),
+                rgb(130, 165, 229));
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    width: 0;
+    box-shadow: 0 0 3px -5px rgb(13, 28, 241), 0 3px 150px
+                rgb(7, 40, 226);
+    transition: width .5s ease;
+}
